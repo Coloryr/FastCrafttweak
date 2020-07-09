@@ -17,6 +17,7 @@
                 <ResourceDictionary Source="/Style/Slider.xaml"/>
                 <ResourceDictionary Source="/Style/TabControl.xaml"/>
                 <ResourceDictionary Source="/Style/TextBox.xaml"/>
+                <ResourceDictionary Source="/Themes/UTabItem.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

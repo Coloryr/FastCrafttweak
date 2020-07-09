@@ -1,0 +1,25 @@
+﻿<Window x:Class="FastCrafttweak.Windows.ItemSelect"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FastCrafttweak.Windows" 
+        xmlns:U="clr-namespace:FastCrafttweak.Controls"
+        mc:Ignorable="d"
+        Title="物品/方块选择" Height="550" Width="800" Icon="../Color_yr.ico" ResizeMode="NoResize" Foreground="#FF5ABED6">
+    <Grid Background="#FFEFEBEF">
+        <Rectangle Stroke="#FF5ABED6" StrokeThickness="2"/>
+        <TabControl Margin="2,2,2,2" TabStripPlacement="Left">
+            <U:UTabItem Header="Item" aImage="../Color_yr.ico">
+                <Grid Background="#FFE5E5E5"/>
+            </U:UTabItem>
+            <TabItem Header="TabItem" Style="{StaticResource TabItem}">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="TabItem" Style="{StaticResource TabItem}">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

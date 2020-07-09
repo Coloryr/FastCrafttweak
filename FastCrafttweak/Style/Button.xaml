@@ -12,12 +12,12 @@
                         <Trigger Property="IsEnabled" Value="true">
                             <Setter TargetName="gridborder" Property="Background" Value="#00000000"/>
                             <Setter TargetName="gridborder" Property="BorderBrush" Value="#FF5EBDD3"/>
-                            <Setter TargetName="data" Property="Foreground" Value="#FF000000"/>
+                            <Setter TargetName="data" Property="Foreground" Value="Black"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter TargetName="gridborder" Property="Background" Value="#00000000"/>
                             <Setter TargetName="gridborder" Property="BorderBrush" Value="#FF5EBDD3"/>
-                            <Setter TargetName="data" Property="Foreground" Value="#FF999999"/>
+                            <Setter TargetName="data" Property="Foreground" Value="#FFCDCDCD"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

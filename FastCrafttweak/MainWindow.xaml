@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FastCrafttweak"
         mc:Ignorable="d"
-        Title="FastCrafttwaek" Height="450" Width="800" Icon="Color_yr.ico" ResizeMode="NoResize">
-    <Grid>
-        
+        Title="FastCrafttwaek" Height="250" Width="380" Icon="./Color_yr.ico" Foreground="#FF5ABED6">
+    <Grid Background="#FFEFEBEF">
+        <Rectangle Stroke="#FF5ABED6" StrokeThickness="2"/>
+        <Button Content="新建工程" Margin="150,85,0,0" Style="{StaticResource Button}" Height="17" VerticalAlignment="Top"
+                HorizontalAlignment="Left" Width="72" Click="Button_Click"/>
+        <Button Content="打开工程" Margin="150,109,0,0" Style="{StaticResource Button}" Height="17" VerticalAlignment="Top" 
+                HorizontalAlignment="Left" Width="72" Click="Button_Click_1"/>
+
     </Grid>
 </Window>
