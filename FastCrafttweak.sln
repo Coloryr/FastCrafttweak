@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastCrafttweak", "FastCrafttweak\FastCrafttweak.csproj", "{35ADC349-90B4-47ED-A3CA-332391E7365A}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FastCrafttweakLib", "FastCrafttweakLib\FastCrafttweakLib.shproj", "{E68C16ED-72D0-4488-8EE7-AA5DBFF40D36}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		FastCrafttweakLib\FastCrafttweakLib.projitems*{e68c16ed-72d0-4488-8ee7-aa5dbff40d36}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35ADC349-90B4-47ED-A3CA-332391E7365A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35ADC349-90B4-47ED-A3CA-332391E7365A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35ADC349-90B4-47ED-A3CA-332391E7365A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35ADC349-90B4-47ED-A3CA-332391E7365A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B64D099A-6C11-4BB7-963D-F93FBE7F3F17}
+	EndGlobalSection
+EndGlobal
