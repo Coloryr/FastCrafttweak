@@ -9,7 +9,12 @@
     <Import_RootNamespace>FastCrafttweakLib</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Craft\CraftInit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Craft\CraftList\CraftingTable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Craft\CraftList\Furnace.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Craft\CraftObj.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Craft\CraftSave\ISave.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Craft\CraftSave\MinecraftSave.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Item\ItemInit.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Item\ItemList\IListItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Item\ItemList\Minecraft.cs" />
