@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FastCrafttweakLib.Craft;
+using FastCrafttweakLib.Item;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +15,10 @@ namespace FastCrafttweak
     /// </summary>
     public partial class App : Application
     {
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            ItemInit.Init();
+            CraftInit.Init();
+        }
     }
 }

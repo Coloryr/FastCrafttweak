@@ -9,6 +9,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FastCrafttweakLib", "FastCr
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		FastCrafttweakLib\FastCrafttweakLib.projitems*{35adc349-90b4-47ed-a3ca-332391e7365a}*SharedItemsImports = 4
 		FastCrafttweakLib\FastCrafttweakLib.projitems*{e68c16ed-72d0-4488-8ee7-aa5dbff40d36}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

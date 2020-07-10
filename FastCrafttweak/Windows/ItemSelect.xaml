@@ -6,19 +6,31 @@
         xmlns:local="clr-namespace:FastCrafttweak.Windows" 
         xmlns:U="clr-namespace:FastCrafttweak.Controls"
         mc:Ignorable="d"
-        Title="物品/方块选择" Height="550" Width="800" Icon="../Color_yr.ico" ResizeMode="NoResize" Foreground="#FF5ABED6">
+        Title="物品/方块选择" Height="550" Width="790" ResizeMode="NoResize" Icon="pack://application:,,,/Color_yr.ico" Foreground="#FF5ABED6">
     <Grid Background="#FFEFEBEF">
         <Rectangle Stroke="#FF5ABED6" StrokeThickness="2"/>
         <TabControl Margin="2,2,2,2" TabStripPlacement="Left">
-            <U:UTabItem Header="Item" aImage="../Color_yr.ico">
-                <Grid Background="#FFE5E5E5"/>
+            <U:UTabItem Header="Minecraft" aImage="pack://application:,,,/Resource/Minecraft/ico.png">
+                <ScrollViewer Margin="0" Style="{StaticResource ScrollViewer}">
+                    <WrapPanel Background="#FFFFFFFF" Name="I1">
+                    </WrapPanel>
+                </ScrollViewer>
             </U:UTabItem>
-            <TabItem Header="TabItem" Style="{StaticResource TabItem}">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
-            <TabItem Header="TabItem" Style="{StaticResource TabItem}">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
+            <U:UTabItem Header="Item" aImage="../Color_yr.ico">
+                <Grid Background="#FFFFFFFF">
+
+                </Grid>
+            </U:UTabItem>
+            <U:UTabItem Header="Item" aImage="../Color_yr.ico">
+                <Grid Background="#FFFFFFFF">
+
+                </Grid>
+            </U:UTabItem>
+            <U:UTabItem Header="Item" aImage="../Color_yr.ico">
+                <Grid Background="#FFE5E5E5">
+
+                </Grid>
+            </U:UTabItem>
         </TabControl>
 
     </Grid>

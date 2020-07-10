@@ -9,5 +9,10 @@
     <Import_RootNamespace>FastCrafttweakLib</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Craft\CraftObj.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Item\ItemInit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Item\ItemList\IListItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Item\ItemList\Minecraft.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Item\ItemObj.cs" />
   </ItemGroup>
 </Project>

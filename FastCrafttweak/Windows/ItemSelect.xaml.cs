@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FastCrafttweak.Controls;
+using FastCrafttweakLib.Item.ItemList;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,25 @@ namespace FastCrafttweak.Windows
         public ItemSelect()
         {
             InitializeComponent();
+            AddItem();
+        }
+
+        public void AddItem()
+        {
+            foreach (var item in Minecraft.MinecraftList)
+            {
+                var Button = new UButton()
+                {
+                    Texture = item.Texture,
+                    Content = item.Name
+                };
+                I1.Children.Add(Button);
+            }
+        }
+
+        private void UButton_Click(object sender, RoutedEventArgs e)
+        {
+            var button = (UButton)sender;
         }
     }
 }
