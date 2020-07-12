@@ -1,4 +1,5 @@
-﻿using FastCrafttweakLib.Craft;
+﻿using FastCrafttweak.Windows;
+using FastCrafttweakLib.Craft;
 using FastCrafttweakLib.Item;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,11 @@ namespace FastCrafttweak
     /// </summary>
     public partial class App : Application
     {
+        public static MainWindow MainWindow_ { get; set; }
+        public static ItemSelect ItemSelect_ { get; set; }
+        public static CraftEdit CraftEdit_ { get; set; }
+        public static ScriptSelect ScriptSelect_ { get; set; }
+        public static WindowsOpen WindowsOpen_ { get; set; }
         private void Application_Startup(object sender, StartupEventArgs e)
         {
             ItemInit.Init();

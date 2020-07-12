@@ -6,19 +6,20 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/Style/Button.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/Style/CheckBox.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/Style/ComboBox.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/Style/ContextMenu.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/Style/GroupBox.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/Style/Label.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/Style/ListView.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/Style/RadioButton.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/Style/Slider.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/Style/TabControl.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/Style/TextBox.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/Themes/UTabItem.xaml"/>
-                <ResourceDictionary Source="pack://application:,,,/Themes/UButton.xaml"/>
+                <ResourceDictionary Source="/FastCrafttweak;component/Style/Button.xaml"/>
+                <ResourceDictionary Source="/FastCrafttweak;component/Style/CheckBox.xaml"/>
+                <ResourceDictionary Source="/FastCrafttweak;component/Style/ComboBox.xaml"/>
+                <ResourceDictionary Source="/FastCrafttweak;component/Style/ContextMenu.xaml"/>
+                <ResourceDictionary Source="/FastCrafttweak;component/Style/GroupBox.xaml"/>
+                <ResourceDictionary Source="/FastCrafttweak;component/Style/Label.xaml"/>
+                <ResourceDictionary Source="/FastCrafttweak;component/Style/ListView.xaml"/>
+                <ResourceDictionary Source="/FastCrafttweak;component/Style/RadioButton.xaml"/>
+                <ResourceDictionary Source="/FastCrafttweak;component/Style/Slider.xaml"/>
+                <ResourceDictionary Source="/FastCrafttweak;component/Style/TabControl.xaml"/>
+                <ResourceDictionary Source="/FastCrafttweak;component/Style/TextBox.xaml"/>
+                <ResourceDictionary Source="/FastCrafttweak;component/Controls/XAML/UTabItem.xaml"/>
+                <ResourceDictionary Source="/FastCrafttweak;component/Controls/XAML/UButton.xaml"/>
+                <ResourceDictionary Source="/FastCrafttweak;component/Controls/XAML/CButton.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

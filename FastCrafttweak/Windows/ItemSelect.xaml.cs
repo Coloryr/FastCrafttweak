@@ -1,4 +1,6 @@
 ﻿using FastCrafttweak.Controls;
+using FastCrafttweak.Windows.CraftEditList;
+using FastCrafttweakLib.Item;
 using FastCrafttweakLib.Item.ItemList;
 using System;
 using System.Collections.Generic;
@@ -20,10 +22,11 @@ namespace FastCrafttweak.Windows
     /// ItemSelect.xaml 的交互逻辑
     /// </summary>
     public partial class ItemSelect : Window
-    {
+    { 
         public ItemSelect()
         {
             InitializeComponent();
+            App.ItemSelect_ = this;
             AddItem();
         }
 
@@ -33,9 +36,11 @@ namespace FastCrafttweak.Windows
             {
                 var Button = new UButton()
                 {
-                    Texture = item.Texture,
-                    Content = item.Name
+                    Texture = item.Value.Texture,
+                    Content = item.Value.Name,
+                    KeyName = item.Key
                 };
+                Button.Click += UButton_Click;
                 I1.Children.Add(Button);
             }
         }
@@ -43,6 +48,18 @@ namespace FastCrafttweak.Windows
         private void UButton_Click(object sender, RoutedEventArgs e)
         {
             var button = (UButton)sender;
+            switch(button.ListName)
+            {
+                case ListName.Minecraft:
+                    App.CraftEdit_?.Call(Minecraft.MinecraftList[button.KeyName]);
+                    break;
+            }
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            App.ItemSelect_ = null;
+            App.WindowsOpen_?.Check();
         }
     }
 }

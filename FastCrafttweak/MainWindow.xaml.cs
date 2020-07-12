@@ -24,17 +24,26 @@ namespace FastCrafttweak
         public MainWindow()
         {
             InitializeComponent();
+            App.MainWindow_ = this;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             new ItemSelect().Show();
+            new CraftEdit().Show();
+            new ScriptSelect().Show();
+            new WindowsOpen().Show();
             this.Close();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            App.MainWindow_ = null;
         }
     }
 }

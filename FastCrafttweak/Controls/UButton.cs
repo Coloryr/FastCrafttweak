@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FastCrafttweakLib.Craft;
+using FastCrafttweakLib.Item;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,14 +48,15 @@ namespace FastCrafttweak.Controls
     /// </summary>
     public class UButton : Button
     {
-        public static readonly DependencyProperty aImageProperty =
-        DependencyProperty.Register(nameof(Texture), typeof(string), typeof(UTabItem));
+        public static readonly DependencyProperty TextureProperty =
+        DependencyProperty.Register(nameof(Texture), typeof(string), typeof(UButton));
         public string Texture
         {
-            get => (string)GetValue(aImageProperty);
-            set => SetValue(aImageProperty, value);
+            get => (string)GetValue(TextureProperty);
+            set => SetValue(TextureProperty, value);
         }
-        public string BlockID { get; set; }
+        public string KeyName { get; set; }
+        public ListName ListName { get; set; }
         static UButton()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(UButton), new FrameworkPropertyMetadata(typeof(UButton)));

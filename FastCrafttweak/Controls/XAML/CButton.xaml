@@ -1,0 +1,28 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:FastCrafttweak.Controls">
+    <Style TargetType="{x:Type local:CButton}">
+        <Setter Property="Width" Value="150"/>
+        <Setter Property="Margin" Value="0,0,2,2"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Image Width="80" Height="84" Margin="0,0" Source="{Binding CTexture,RelativeSource={RelativeSource Mode=TemplatedParent},Mode=TwoWay}"/>
+                        <TextBlock Margin="0,40,0,0" Text="{Binding UCount,RelativeSource={RelativeSource Mode=TemplatedParent},Mode=TwoWay}" Width="80" FontSize="40" FontStyle="Normal" TextAlignment="Right" Foreground="White"/>
+                        <TextBlock x:Name="Pan" Width="auto" Height="auto" Background="{Binding UColor,RelativeSource={RelativeSource Mode=TemplatedParent},Mode=TwoWay}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="Pan" Property="Background" Value="#99FFFFFF"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseCaptured" Value="true">
+                            <Setter TargetName="Pan" Property="Background" Value="#FFFFFFFF"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

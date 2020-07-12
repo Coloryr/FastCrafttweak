@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FastCrafttweakLib.Craft
 {
-    class CraftInit
+    public class CraftInit
     {
         public static void Init()
         {

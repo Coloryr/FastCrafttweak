@@ -38,7 +38,7 @@
     <Style x:Key="RadioButton_Middle" TargetType="{x:Type RadioButton}">
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="BorderBrush" Value="Transparent"/>
-        <Setter Property="Foreground" Value="White"></Setter>
+        <Setter Property="Foreground" Value="Black"></Setter>
         <Setter Property="Padding" Value="0"></Setter>
         <Setter Property="FontSize" Value="16"></Setter>
         <Setter Property="BorderThickness" Value="0"></Setter>

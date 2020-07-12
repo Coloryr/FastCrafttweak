@@ -13,10 +13,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Craft\CraftList\CraftingTable.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Craft\CraftList\Furnace.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Craft\CraftObj.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Craft\CraftSave\ISave.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)..\..\..\C#%27s src\FastCrafttweak\FastCrafttweakLib\Craft\ISave.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Craft\CraftSave\MinecraftSave.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Item\ItemInit.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Item\ItemList\IListItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)..\..\..\C#%27s src\FastCrafttweak\FastCrafttweakLib\Item\IListItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Item\ItemList\Minecraft.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Item\ItemObj.cs" />
   </ItemGroup>

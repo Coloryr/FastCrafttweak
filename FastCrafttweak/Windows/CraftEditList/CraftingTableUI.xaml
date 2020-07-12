@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="FastCrafttweak.Windows.CraftEditList.CraftingTableUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:U="clr-namespace:FastCrafttweak.Controls"
+             mc:Ignorable="d" Height="500" Width="760" MouseRightButtonDown="UserControl_MouseRightButtonDown">
+    <Grid Background="White">
+        <Image Source="/FastCrafttweak;component/Resource/Craft/Minecraft/CraftingTable.png" Margin="21,25,0,0" Height="410" VerticalAlignment="Top" HorizontalAlignment="Left" Width="710"/>
+        <U:CButton Margin="75,73,0,0" x:Name="I1" ULocal="1" Click="Click"
+                   Width="86" Height="86" HorizontalAlignment="Left" VerticalAlignment="Top" MouseRightButtonDown="MouseRightButtonDown_"/>
+        <U:CButton Margin="172,73,0,0" x:Name="I2" ULocal="2" Click="Click"
+                   Width="86" Height="86" HorizontalAlignment="Left" VerticalAlignment="Top" MouseRightButtonDown="MouseRightButtonDown_"/>
+        <U:CButton Margin="268,73,0,0" x:Name="I3" ULocal="3" Click="Click"
+                   Width="86" Height="86" HorizontalAlignment="Left" VerticalAlignment="Top" MouseRightButtonDown="MouseRightButtonDown_"/>
+        <U:CButton Margin="75,170,0,0" x:Name="I4" ULocal="4" Click="Click"
+                   Width="86" Height="86" HorizontalAlignment="Left" VerticalAlignment="Top" MouseRightButtonDown="MouseRightButtonDown_"/>
+        <U:CButton Margin="172,170,0,0" x:Name="I5" ULocal="5" Click="Click"
+                   Width="86" Height="86" HorizontalAlignment="Left" VerticalAlignment="Top" MouseRightButtonDown="MouseRightButtonDown_"/>
+        <U:CButton Margin="268,170,0,0" x:Name="I6" ULocal="6" Click="Click"
+                   Width="86" Height="86" HorizontalAlignment="Left" VerticalAlignment="Top" MouseRightButtonDown="MouseRightButtonDown_"/>
+        <U:CButton Margin="75,267,0,0" x:Name="I7" ULocal="7" Click="Click"
+                   Width="86" Height="86" HorizontalAlignment="Left" VerticalAlignment="Top" MouseRightButtonDown="MouseRightButtonDown_"/>
+        <U:CButton Margin="172,267,0,0" x:Name="I8" ULocal="8" Click="Click"
+                   Width="86" Height="86" HorizontalAlignment="Left" VerticalAlignment="Top" MouseRightButtonDown="MouseRightButtonDown_"/>
+        <U:CButton Margin="268,267,0,0" x:Name="I9" ULocal="9" Click="Click"
+                   Width="86" Height="86" HorizontalAlignment="Left" VerticalAlignment="Top" MouseRightButtonDown="MouseRightButtonDown_"/>
+        <U:CButton Margin="580,170,0,0" x:Name="O" ULocal="10" Click="Click"
+                   Width="86" Height="86" HorizontalAlignment="Left" VerticalAlignment="Top" MouseRightButtonDown="MouseRightButtonDown_"/>
+        <RadioButton Content="有序合成" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="566,422,0,0" Name="S1"
+                     Style="{StaticResource RadioButton_Middle}" Width="80" Height="35" Checked="RadioButton_Checked"/>
+        <RadioButton Content="无序合成" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="651,422,0,0" Name="S2"
+                     Style="{StaticResource RadioButton_Middle}" Width="80" Height="35" Checked="RadioButton_Checked_1"/>
+    </Grid>
+</UserControl>

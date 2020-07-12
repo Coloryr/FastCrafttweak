@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FastCrafttweakLib.Item
 {
-    class ItemInit
+    class ItemInit : ItemObj
     {
         public static void Init()
         {

@@ -1,14 +1,20 @@
-﻿namespace FastCrafttweakLib.Craft.CraftList
+﻿using FastCrafttweakLib.Item;
+
+namespace FastCrafttweakLib.Craft.CraftList
 {
-    class CraftingTable : CraftObj
+    public class CraftingTable : CraftObj
     {
-        public CraftType Type { get; set; }
-        public CraftingTable(string[] Inputs, string Output, CraftType type = CraftType.Shaped) : base("CraftingTable", "", Inputs, Output)
+        public CraftType CraftType { get; set; }
+        public CraftingTable(ItemObj[] Inputs, ItemObj Output, CraftType type = CraftType.Shaped) : base("CraftingTable", Inputs, Output, CraftListType.CraftingTable)
         {
-            Type = type;
+            CraftType = type;
+        }
+
+        public CraftingTable() : base("CraftingTable", new ItemObj[9], null, CraftListType.CraftingTable)
+        {
         }
     }
-    enum CraftType
+    public enum CraftType
     {
         Shaped, Shapeless
     }
