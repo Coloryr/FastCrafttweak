@@ -40,7 +40,8 @@
                                 Padding="{TemplateBinding Padding}"
                                 SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
                                 UseLayoutRounding="{TemplateBinding UseLayoutRounding}">
-                        <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal"
+                       >
                             <ContentPresenter x:Name="contentPresenter"
                                               Margin="{TemplateBinding Padding}"
                                               HorizontalAlignment="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"

@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CmdControl.Custom
+namespace FastCrafttweak.Controls
 {
     /// <summary>
     /// 按照步骤 1a 或 1b 操作，然后执行步骤 2 以在 XAML 文件中使用此自定义控件。
@@ -22,14 +22,14 @@ namespace CmdControl.Custom
     /// 将此 XmlNamespace 特性添加到要使用该特性的标记文件的根
     /// 元素中:
     ///
-    ///     xmlns:MyNamespace="clr-namespace:CmdControl.Custom"
+    ///     xmlns:MyNamespace="clr-namespace:FastCrafttweak.Controls"
     ///
     ///
     /// 步骤 1b) 在其他项目中存在的 XAML 文件中使用该自定义控件。
     /// 将此 XmlNamespace 特性添加到要使用该特性的标记文件的根
     /// 元素中:
     ///
-    ///     xmlns:MyNamespace="clr-namespace:CmdControl.Custom;assembly=CmdControl.Custom"
+    ///     xmlns:MyNamespace="clr-namespace:FastCrafttweak.Controls;assembly=FastCrafttweak.Controls"
     ///
     /// 您还需要添加一个从 XAML 文件所在的项目到此项目的项目引用，
     /// 并重新生成以避免编译错误:
@@ -46,12 +46,12 @@ namespace CmdControl.Custom
     /// </summary>
     public class UTabItem : TabItem
     {
-        public static readonly DependencyProperty ShowColorProperty =
-       DependencyProperty.Register(nameof(ShowColor), typeof(string), typeof(UTabItem));
-        public string ShowColor
+        public static readonly DependencyProperty aImageProperty =
+       DependencyProperty.Register(nameof(aImage), typeof(string), typeof(UTabItem));
+        public string aImage
         {
-            get => (string)GetValue(ShowColorProperty);
-            set => SetValue(ShowColorProperty, value);
+            get => (string)GetValue(aImageProperty);
+            set => SetValue(aImageProperty, value);
         }
         static UTabItem()
         {
